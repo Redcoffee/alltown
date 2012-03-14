@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<?
+	/* head */
+	include ("./common/head.php"); 
+?>
+	<link href="css/place.css" rel="stylesheet">
+</head>
+<body>
+<?
+	/* gnb */
+	include ("./common/gnb.php"); 
+?>
+<div class="container body-wrap" style="margin-top:40px;">
+
+	<div class="place-info">	
+		<img src="https://static-s.foursquare.com/img/categories/food/default_64-03b1fc788560feed36f1d214a3a8c3d8.png" class="icon" style="float:left; width:50px; ">
+		<div class="inner_wrap">
+			<h1>
+				아비꼬 카레 홍대본점
+				<a class="btn btn-info" href="">좋아요</a>
+				<div class="pull-right">
+					<a class="btn btn-small" href=""><i class="icon-exclamation-sign"></i>매장주세요?</a>
+					<a class="btn btn-small" href=""><i class="icon-pencil"></i>수정</a>				
+				</div>			
+			</h1>	
+			<a href=""><i class="icon-map-marker"></i>서울특별시 마포구 서교동</a> · <a href=""><i class="icon-info-sign"></i>02-3480-5557</a> · 
+			<a href="">음식점</a> · <a href="">일식</a> · <a href="">카레 전문점</a>
+		</div>
+	</div>
+
+<?
+	/* side */
+	include ("./place/side.php"); 
+?>
+<div class="content_outter_wrap pull-left">		
+<?
+	/* feed */
+	include ("./place/all.php"); 
+	
+	/* suggest */
+	include ("./place/suggest.php"); 
+?>		
+	</div>
+</div>
+
+<?
+	/* footer */
+	include ("./common/footer.php"); 
+
+	/* script */
+	include ("./common/script.php"); 
+?>
+</body>
+</html>
