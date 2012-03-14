@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<?
+	/* head */
+	include ("./common/head.php"); 
+?>
+	<link href="css/feed.css" rel="stylesheet">
+</head>
+<body>
+<?
+	/* gnb */
+	include ("./common/gnb.php"); 
+?>
+
+<div class="container body_wrap">
+<?
+	/* side */
+	include ("./feed/menu.php"); 
+?>
+	<div class="pull-left">
+		<div class="area">
+			<ul class="nav nav-pills">
+				<li class="dropdown"><a href="#" class="dropdown-toggle region" data-toggle="dropdown"><i class="icon-map-marker"></i><b>잠원동</b> <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="">행신동</a></li>
+						<li><a href="">잠원동</a></li>
+						<li class="divider"></li>
+						<li><a href="">현재위치</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle range" data-toggle="dropdown">2km <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="">2km</a></li>
+						<li><a href="">5km</a></li>
+						<li><a href="">10km</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="content_outter_wrap">
+<?	
+			/* feed */
+			include ("./feed/feed.php"); 
+	
+			/* suggest */
+			include ("./feed/suggest.php"); 
+?>		
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<?
+	/* footer */
+	include ("./common/footer.php"); 
+
+	/* script */
+	include ("./common/script.php"); 
+?>
+</body>
+</html>
