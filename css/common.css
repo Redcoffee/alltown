@@ -63,5 +63,5 @@ img { vertical-align:middle; }
 .gnb .search-query { width:300px; }
 
 /* footer */
-.footer { padding-bottom:50px; font-size:12px; }
+.footer { padding-top:10px; padding-bottom:50px; font-size:12px; }
 .footer > span { margin:0 10px; color:gray; }
