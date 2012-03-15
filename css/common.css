@@ -48,7 +48,7 @@ table {
 }
 
 /* common */
-body { font-family:"arial","맑은 고딕" !important; background:#F0F1F2 url('../img/paper2.png'); }
+body { /*font-family:"arial","맑은 고딕" !important;*/ background:#F0F1F2 url('../img/paper2.png'); }
 
 .clear { clear:both; }
 img { vertical-align:middle; } 
